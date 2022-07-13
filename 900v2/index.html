@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest"><head>
+<title>PS4 9.00 FW Host v2.5 by Anonymous75</title>
+<link rel="stylesheet" href="../style.css">
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+</head>
+<body>
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));document.getElementById="display:none";window.msgs.innerHTML="Installation du cache hors ligne: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache installé avec succès ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Maintenant, fermez et rouvrez votre navigateur...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<h1 id="msgs">PS4 9.00 FW Host v2.5 by Anonymous75</h1>
+<hr>
+<br>
+<h1 style="font-size:18px;color:yellow;">Principales charges utiles</h1>
+<button class="btn" onmouseover="GoldHen23b2()" onmouseout="pagetitle()" onclick=load_goldhen23b2()> GoldHEN v2.3b2 </button>
+<button class="btn" onmouseover="GoldHen()" onmouseout="pagetitle()" onclick=load_goldhen222()> GoldHEN v2.2.2 </button>
+<button class="btn" onmouseover="BinLoader()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<br>
+<h1 style="font-size:18px;text-align:center;">Charges utiles</h1>
+<button class="btn" onmouseover="ToDex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
+<button class="btn" onmouseover="Dumper()" onmouseout="pagetitle()" onclick=load_dumper()> App-Dumper </button>
+<button class="btn" onmouseover="FTP()" onmouseout="pagetitle()" onclick=load_ftp()> FTP </button>
+<button class="btn" onmouseover="App2USB()" onmouseout="pagetitle()" onclick=load_app2usb()> App2USB </button>
+<button class="btn" onmouseover="Backup()" onmouseout="pagetitle()" onclick=load_dbackup()> DB Backup </button>
+<button class="btn" onmouseover="Restore()" onmouseout="pagetitle()" onclick=load_dbrestore()> DB Restore </button>
+<br>
+<button class="btn" onmouseover="EnableUpdates()" onmouseout="pagetitle()" onclick=load_enablebUpdates()> Enable Updates </button>
+<button class="btn" onmouseover="DisableUpdates()" onmouseout="pagetitle()" onclick=load_disableUpdates()> Disable Updates </button>
+<button class="btn" onmouseover="HistoryBlocker()" onmouseout="pagetitle()" onclick=load_historyBlocker()> History Blocker </button>
+<button class="btn" onmouseover="KernelDump()" onmouseout="pagetitle()" onclick=load_kernelDump()> Kernel Dumper </button>
+<button class="btn" onmouseover="ModuleDump()" onmouseout="pagetitle()" onclick=load_moduleDump()> Module Dumper </button>
+<button class="btn" onmouseover="PS4Debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
+<br>
+<button class="btn" onmouseover="DisableASLR()" onmouseout="pagetitle()" onclick=load_disbAslr()> Disable ASLR </button>
+<button class="btn" onmouseover="ExitIDU()" onmouseout="pagetitle()" onclick=load_exitidu()> Exit IDU </button>
+<button class="btn" onmouseover="RifRen()" onmouseout="pagetitle()" onclick=load_rifRen()> RIF Renamer </button>
+<button class="btn" onmouseover="PermUART()" onmouseout="pagetitle()" onclick=load_permUart()> Permanent UART </button>
+<button class="btn" onmouseover="WebRTE()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE </button>
+<a href="http://ps4trainer.com/Trainer/index.html"><button class="btn btn-web" onmouseover="TrainerWeb()" onmouseout="pagetitle()"> PS4 Trainer Web </button></a>
+<br>
+<a href="webactivator.html"><button class="btn" style="margin-left: 77px;" onmouseover="WebAct()" onmouseout="pagetitle()"> Web-Activator </button></a>
+<button class="btn btn-toolbox" onmouseover="ToolBox()" onmouseout="pagetitle()" onclick=load_toolbox()> Orbis-Toolbox </button>
+<button class="btn" onmouseover="FanSpeed()" onmouseout="pagetitle()" onclick=load_fanthreshold() style="margin-right: 8px;"> Seuil du ventilateur </button><select id="tempC"></select>&#176;C
+<br>
+<h1 style="font-size:18px;color:yellow;">Charges utiles en ligne</h1>
+<a href="online.html"><button class="btn btn-web" style="margin-bottom: 11px;width: 468px;" onmouseover="OnlinePLS()" onmouseout="pagetitle()"> Cliquez ici pour charger la page </button></a>
+<br>
+<h1 style="margin-top: 55px;color: yellow;">Remerciement spécial à:<a style="color: white;margin-left: 10px;">Anonymous75</a><a style="color: white;margin-left: 10px;">Et bien d'autres développeurs...</a></h1>
+<script>
+for(var i=40; i<=75; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+<script>
+function GoldHen23b2(){
+document.getElementById("msgs").innerHTML = "GoldHen v2.3b2 for 9.00 FW";
+}
+function GoldHen(){
+document.getElementById("msgs").innerHTML = "GoldHen v2.2.2 for 9.00 FW";
+}
+function BinLoader(){
+document.getElementById("msgs").innerHTML = "Envoyer une charge utile en utilisant le port 9020";
+}
+function ToDex(){
+document.getElementById("msgs").innerHTML = "Activer certaines fonctions de débogage disponibles sur TestKit";
+}
+function Dumper(){
+document.getElementById("msgs").innerHTML = "Vider les jeux sur une clé USB" ;
+}
+function FTP(){
+document.getElementById("msgs").innerHTML = "Accéder à cette console via FTP (faites attention à ce que vous faites)" ;
+}
+function App2USB(){
+document.getElementById("msgs").innerHTML = "Transférer les jeux installés sur une clé USB en exFAT" ;
+}
+function Backup(){
+document.getElementById("msgs").innerHTML = "Créer une sauvegarde de la base de données et des utilisateurs sur une clé USB" ;
+}
+function Restore(){
+document.getElementById("msgs").innerHTML = "Restaurer une sauvegarde de la base de données et des utilisateurs à partir d'une clé USB" ;
+}
+function EnableUpdates(){
+document.getElementById("msgs").innerHTML = "Activer les mises à jour système" ;
+}
+function DisableUpdates(){
+document.getElementById("msgs").innerHTML = "Désactiver les mises à jour système" ;
+}
+function HistoryBlocker(){
+document.getElementById("msgs").innerHTML = "Activer/Désactiver l'historique du navigateur." ;
+}
+function KernelDump(){
+document.getElementById("msgs").innerHTML = "Vider un noyau de console sur une clé USB" ;
+}
+function ModuleDump(){
+document.getElementById("msgs").innerHTML = "Vider un module du noyau sur une clé USB" ;
+}
+function PS4Debug(){
+document.getElementById("msgs").innerHTML = "Débogage PS4 pour 9.00 FW" ;
+}
+function DisableASLR(){
+document.getElementById("msgs").innerHTML = "Désactive l'ASLR (randomisation de la disposition de l'espace d'adressage)" ;
+}
+function ExitIDU(){
+document.getElementById("msgs").innerHTML = "Désactivez le mode IDU si vous l'avez activé par erreur" ;
+}
+function RifRen(){
+document.getElementById("msgs").innerHTML = "Renomme les RIF « faux » en RIF « gratuits » » ;
+}
+function PermUART(){
+document.getElementById("msgs").innerHTML = "UART permanent pour 9.00 FW" ;
+}
+function WebRTE(){
+document.getElementById("msgs").innerHTML = "Nécessaire pour activer les tricheurs via le site Web PS4 Trainer" ;
+}
+function TrainerWeb(){
+document.getElementById("msgs").innerHTML = "Site Web PS4 Trainer (Suivez les instructions ici)" ;
+}
+function WebAct(){
+document.getElementById("msgs").innerHTML = "Activez votre compte utilisateur à partir du navigateur de la console" ;
+}
+function ToolBox(){
+document.getElementById("msgs").innerHTML = "Orbis ToolBox Alpha 1190 pour 9.00 FW";
+}
+function FanSpeed(){
+document.getElementById("msgs").innerHTML = "Modifier la vitesse du ventilateur PS4" ;
+}
+function OnlinePLS(){
+document.getElementById("msgs").innerHTML = "Charges utiles hébergées en ligne" ;
+}
+function pagetitle(){
+document.getElementById("msgs").innerHTML = "PS4 9.00 FW Host v2.5 by Anonymous75";
+}
+
+function load_goldhen23b2(){
+document.getElementById("msgs").innerHTML = "GoldHen v2.3b2 for 9.00 FW";
+msgs.innerHTML="Chargement de GoldHEN v2.3b2... Veuillez patienter !!!";
+PLfile = "goldhen_2.3b2.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_goldhen222(){
+document.getElementById("msgs").innerHTML = "GoldHen v2.2.2 for 9.00 FW";
+msgs.innerHTML="Chargement de GoldHEN v2.2.2... Veuillez patienter !!!";
+PLfile = "goldhen_2.2.2.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_binloader(){
+msgs.innerHTML="Lancement de Bin Loader... Veuillez patienter !!!";
+run_jb = "binloader";
+setTimeout(poc,1500);
+}
+
+function load_todex(){
+msgs.innerHTML="Chargement de ToDex... Veuillez patienter !!!"
+PLfile = "todex.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_dumper(){
+msgs.innerHTML="Chargement de l'App-Dumper... Veuillez patienter !!!"
+PLfile = "dumper.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_ftp(){
+msgs.innerHTML="Chargement du FTP... Veuillez patienter !!!"
+PLfile = "ftp.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_app2usb(){
+msgs.innerHTML="Chargement d'App2USB... Veuillez patienter !!!"
+PLfile = "app2usb.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_dbackup(){
+msgs.innerHTML="Chargement Sauvegarde de la base de données... Veuillez patienter !!!"
+PLfile = "backup.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_dbrestore(){
+msgs.innerHTML="Chargement de la restauration de la base de données... Veuillez patienter !!!"
+PLfile = "restore.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_enablebUpdates(){
+msgs.innerHTML="Chargement des mises à jour d'activation... Veuillez patienter !!!"
+PLfile = "enable-updates.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_disableUpdates(){
+msgs.innerHTML="Chargement des mises à jour désactivées... Veuillez patienter !!!"
+PLfile = "disable-updates.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_historyBlocker(){
+msgs.innerHTML="Chargement du bloqueur d'historique... Veuillez patienter !!!"
+PLfile = "history-blocker.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_kernelDump(){
+msgs.innerHTML="Chargement du dumper du noyau... Veuillez patienter !!!"
+PLfile = "kernel-dumper.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_moduleDump(){
+msgs.innerHTML="Chargement du dumper du module... Veuillez patienter !!!"
+PLfile = "module-dumper.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_ps4debug(){
+msgs.innerHTML="Chargement du débogage PS4... Veuillez patienter !!!"
+PLfile = "ps4debug.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_disbAslr(){
+msgs.innerHTML="Chargement Désactiver ASLR... Veuillez patienter !!!"
+PLfile = "disable-aslr.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_exitidu(){
+msgs.innerHTML="Chargement Quitter IDU... Veuillez patienter !!!"
+PLfile = "exit-idu.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_rifRen(){
+msgs.innerHTML="Chargement de RIF Renamer... Veuillez patienter !!!"
+PLfile = "rif-renamer.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_permUart(){
+msgs.innerHTML="Chargement de l'UART permanent... Veuillez patienter !!!"
+PLfile = "permanent-uart.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_webrte(){
+msgs.innerHTML="Chargement de WebRTE... Veuillez patienter !!!"
+PLfile = "webrte.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_toolbox(){
+msgs.innerHTML="Chargement d'Orbis-Toolbox... Veuillez patienter !!!"
+PLfile = "Orbis-Toolbox-900.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+
+function load_fanthreshold(){
+msgs.innerHTML="Chargement du seuil du ventilateur... Veuillez patienter !!!"
+PLfile = "fan-threshold"+tempC.value+".bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+</script>
+</body>
+</html>
